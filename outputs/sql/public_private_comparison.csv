@@ -1,0 +1,4 @@
+institution_type,institutions,price_reporting,earnings_reporting,avg_net_price,avg_grad_debt,avg_earnings
+Private nonprofit,1900,1369,1453,22825.0,21406.0,59298.0
+Public,2047,1781,1980,11033.0,14270.0,50210.0
+Private for-profit,2325,1925,1856,22915.0,12156.0,38625.0

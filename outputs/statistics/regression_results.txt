@@ -1,0 +1,59 @@
+MODEL 1
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          earnings_10yr   R-squared:                       0.088
+Model:                            OLS   Adj. R-squared:                  0.087
+Method:                 Least Squares   F-statistic:                     82.92
+Date:                Tue, 10 Nov 2026   Prob (F-statistic):           2.71e-19
+Time:                        15:59:51   Log-Likelihood:                -16371.
+No. Observations:                1472   AIC:                         3.275e+04
+Df Residuals:                    1470   BIC:                         3.276e+04
+Df Model:                           1                                         
+Covariance Type:                  HC3                                         
+==================================================================================
+                     coef    std err          z      P>|z|      [0.025      0.975]
+----------------------------------------------------------------------------------
+Intercept       5.131e+04   1257.824     40.795      0.000    4.88e+04    5.38e+04
+net_price_1000   529.9781     58.199      9.106      0.000     415.909     644.047
+==============================================================================
+Omnibus:                      407.023   Durbin-Watson:                   1.682
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             1573.320
+Skew:                           1.294   Prob(JB):                         0.00
+Kurtosis:                       7.354   Cond. No.                         58.5
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)
+
+MODEL 2
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:          earnings_10yr   R-squared:                       0.434
+Model:                            OLS   Adj. R-squared:                  0.431
+Method:                 Least Squares   F-statistic:                     118.9
+Date:                Tue, 10 Nov 2026   Prob (F-statistic):          3.10e-138
+Time:                        15:59:51   Log-Likelihood:                -16020.
+No. Observations:                1472   AIC:                         3.206e+04
+Df Residuals:                    1464   BIC:                         3.210e+04
+Df Model:                           7                                         
+Covariance Type:                  HC3                                         
+============================================================================================================
+                                               coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------------------------------
+Intercept                                 6.746e+04   7574.181      8.906      0.000    5.26e+04    8.23e+04
+C(institution_type)[T.Private nonprofit] -2.055e+04   5312.837     -3.867      0.000    -3.1e+04   -1.01e+04
+C(institution_type)[T.Public]            -2.221e+04   5626.648     -3.948      0.000   -3.32e+04   -1.12e+04
+net_price_1000                              88.7499     69.176      1.283      0.200     -46.833     224.332
+graduation_rate                           2.493e+04   3766.166      6.619      0.000    1.75e+04    3.23e+04
+acceptance_rate                          -1.289e+04   2209.008     -5.834      0.000   -1.72e+04   -8558.592
+pell_grant_rate                          -2.965e+04   3209.157     -9.240      0.000   -3.59e+04   -2.34e+04
+log_enrollment                            2647.8637    494.058      5.359      0.000    1679.527    3616.200
+==============================================================================
+Omnibus:                      406.073   Durbin-Watson:                   1.632
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):             2061.730
+Skew:                           1.198   Prob(JB):                         0.00
+Kurtosis:                       8.279   Cond. No.                         405.
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC3)

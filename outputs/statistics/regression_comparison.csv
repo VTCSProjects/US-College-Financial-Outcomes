@@ -1,0 +1,3 @@
+model,observations,r_squared,adjusted_r_squared
+Net price only,1472.0,0.08778011214416681,0.08715955439732614
+Adjusted model,1472.0,0.4337636135775754,0.4310561991616212
